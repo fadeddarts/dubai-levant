@@ -19,10 +19,12 @@ export type Credit = {
   changes: string
 }
 
+const file = (name: string) => `${import.meta.env.BASE_URL}${name}`
+
 export const photos = {
   hero: {
     id: "hero",
-    src: "/images/hero.jpg",
+    src: file("images/hero.jpg"),
     width: 1234,
     height: 1500,
     alt: "Koobideh kebabs and tomatoes cooking over charcoal.",
@@ -31,7 +33,7 @@ export const photos = {
   },
   plate: {
     id: "plate",
-    src: "/images/plate.jpg",
+    src: file("images/plate.jpg"),
     width: 2000,
     height: 1322,
     alt: "Two koobideh kebabs beside saffron-topped rice on a square plate.",
@@ -40,7 +42,7 @@ export const photos = {
   },
   koobideh: {
     id: "koobideh",
-    src: "/images/koobideh.jpg",
+    src: file("images/koobideh.jpg"),
     width: 1800,
     height: 957,
     alt: "A close view of koobideh on a patterned plate with grilled tomato.",
@@ -49,7 +51,7 @@ export const photos = {
   },
   chicken: {
     id: "chicken",
-    src: "/images/chicken.jpg",
+    src: file("images/chicken.jpg"),
     width: 1400,
     height: 1369,
     alt: "Chicken kebabs and tomatoes over a charcoal grill.",
@@ -58,7 +60,7 @@ export const photos = {
   },
   mixed: {
     id: "mixed",
-    src: "/images/mixed.jpg",
+    src: file("images/mixed.jpg"),
     width: 1800,
     height: 1228,
     alt: "A plate of koobideh and grilled chicken with tomato.",
